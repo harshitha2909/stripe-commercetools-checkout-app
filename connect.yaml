@@ -40,6 +40,8 @@ deployAs:
         - key: STRIPE_CAPTURE_METHOD
           description: Stripe capture method (example - manual|automatic).
           default: automatic
+        - key: STRIPE_APPEARANCE_EXPRESS_CHECKOUT
+          description: Stripe Appearance for Express Checkout (example - {"theme":"stripe","variables":{"colorPrimary":"\#0570DE","colorBackground":"\#FFFFFF","colorText":"\#30313D","colorDanger":"\#DF1B41","fontFamily":"Ideal Sans,system-ui,sansserif","spacingUnit":"2px","borderRadius":"4px"}}).
         - key: STRIPE_WEBHOOK_ID_US
           description: Stripe unique identifier for the Webhook Endpoints (example - we_*****).
           required: true
