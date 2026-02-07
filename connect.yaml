@@ -56,11 +56,28 @@ deployAs:
           default: we_1SxD5tHiBVKOneR6w9jSxP9K
         - key: STRIPE_APPEARANCE_PAYMENT_ELEMENT
           description: Stripe Appearance for Payment Element (example - {"theme":"night","labels":"floating"} ).
-        - key: STRIPE_APPEARANCE_EXPRESS_CHECKOUT
-          description: Stripe Appearance for Express Checkout (example - {"theme":"stripe","variables":{"colorPrimary":"\#0570DE","colorBackground":"\#FFFFFF","colorText":"\#30313D","colorDanger":"\#DF1B41","fontFamily":"Ideal Sans,system-ui,sansserif","spacingUnit":"2px","borderRadius":"4px"}}).
         - key: STRIPE_LAYOUT
           description: Stripe Layout for Payment Element (example - {"type":"accordion","defaultCollapsed":false,"radios":true,"spacedAccordionItems":false} ).
           default: '{"type":"tabs","defaultCollapsed":false}'
+        - key: STRIPE_ENABLE_MULTI_OPERATIONS
+          description: Enable multicapture and multirefund support. Requires multicapture to be enabled in your Stripe account (example - true | false).
+          default: 'false'
+        - key: STORED_PAYMENT_METHODS_ENABLED
+          description: If set to "true" then the stored payment methods feature is enabled. Default value is "false".
+          required: false
+        - key: STRIPE_ENABLE_EXPRESS_CHECKOUT
+          description: Enable Stripe Express Checkout Element (true | false).
+          default: 'true'
+          required: true
+        - key: STRIPE_EXPRESS_CHECKOUT_CONTAINER_ID
+          description: The HTML ID where the Express Checkout Element will be mounted.
+          default: 'stripe-express-checkout-element'
+        - key: STORED_PAYMENT_METHODS_PAYMENT_INTERFACE
+          description: The payment method payment interface value used in the commerceotools payment methods. Default value is "psp-template".
+          required: false
+        - key: STORED_PAYMENT_METHODS_INTERFACE_ACCOUNT
+          description: The payment method interface account value used in the commerceotools payment methods.
+          required: false
         - key: STRIPE_PUBLISHABLE_KEY_US
           description: Stripe Publishable Key
           required: true
