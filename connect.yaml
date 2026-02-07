@@ -42,7 +42,7 @@ deployAs:
           default: automatic
         - key: STRIPE_APPEARANCE_EXPRESS_CHECKOUT
           description: Stripe Appearance for Express Checkout (example - {"theme":"stripe","variables":{"colorPrimary":"\#0570DE","colorBackground":"\#FFFFFF","colorText":"\#30313D","colorDanger":"\#DF1B41","fontFamily":"Ideal Sans,system-ui,sansserif","spacingUnit":"2px","borderRadius":"4px"}}).
-        - key: STRIPE_WEBHOOK_ID_US
+        - key: STRIPE_WEBHOOK_ID
           description: Stripe unique identifier for the Webhook Endpoints (example - we_*****).
           required: true
           default: we_1SsOo7QbWNk38YmpJjyU2c5g
@@ -78,7 +78,7 @@ deployAs:
         - key: STORED_PAYMENT_METHODS_INTERFACE_ACCOUNT
           description: The payment method interface account value used in the commerceotools payment methods.
           required: false
-        - key: STRIPE_PUBLISHABLE_KEY_US
+        - key: STRIPE_PUBLISHABLE_KEY
           description: Stripe Publishable Key
           required: true
           default: pk_test_51SXS00QbWNk38Ympevb8B6IQiUvbc779vEePauTfcnfVtZPnrGLvrtYznPm6epyIdxkHWCoKshIW8fGUp9wMOASh00br9wFNTv
@@ -113,7 +113,7 @@ deployAs:
         - key: CTP_CLIENT_ID
           description: commercetools client ID with manage_payments, manage_orders, view_sessions, view_api_clients, manage_checkout_payment_intents, introspect_oauth_tokens, manage_types and view_types scopes
           required: true
-        - key: STRIPE_SECRET_KEY_US
+        - key: STRIPE_SECRET_KEY
           description: Stripe secret key for US region (sk_test_*)
           required: true
         - key: STRIPE_SECRET_KEY_CA
@@ -122,7 +122,7 @@ deployAs:
         - key: STRIPE_SECRET_KEY_EU
           description: Stripe secret key for EU region (sk_test_*)
           required: true
-        - key: STRIPE_WEBHOOK_SIGNING_SECRET_US
+        - key: STRIPE_WEBHOOK_SIGNING_SECRET
           description: Stripe Webhook signing secret  (example - whsec_*****).
           required: true
         - key: STRIPE_WEBHOOK_SIGNING_SECRET_CA
